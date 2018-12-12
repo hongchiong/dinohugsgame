@@ -52,6 +52,8 @@ var dino2 = {
 
         updateScores();
 
+        var bgaudio = document.querySelector("#bgaudio");
+        var hugaudio = document.querySelector("#hugaudio");
 
         var stage = new createjs.Stage(theCanvas);
 
@@ -60,6 +62,7 @@ var dino2 = {
         player1.src = dino1.src;
 
         var loadp2 = function() {
+            bgaudio.play();
             player2.src = dino2.src;
             document.querySelector(".gamePage").style.display = "none";
         };
@@ -83,8 +86,8 @@ var dino2 = {
         var recth = theCanvas.height;
         var rect = new createjs.Shape();
         var drawRect = function(x,y,w,h) {
-            rect.graphics.beginFill("#e0a86b");
-            rect.graphics.drawRoundRect(x,y,w,h, 10,10,10,10);
+            rect.graphics.beginFill("#c4e3ed");
+            rect.graphics.drawRoundRect(x,y,w,h, 20,20,20,20);
             rect.graphics.endFill;
         }
         stage.addChild(rect);
@@ -142,8 +145,6 @@ var dino2 = {
             var oldRotation2;
             var oldY2 = 0, oldX2 = 0;
 
-
-
             var resetPos = function() {
                 p1.x = Math.floor(Math.random()*400+200);
                 p1.y = Math.floor(Math.random()*400+200);
@@ -164,10 +165,10 @@ var dino2 = {
             }
 
             createjs.Ticker.addEventListener("tick", function(){
-                rectx++;
-                recty++;
-                rectw-=2;
-                recth-=2;
+                rectx+=0.8;
+                recty+=0.8;
+                rectw-=1.6;
+                recth-=1.6;
                 rect.graphics.clear();
                 drawRect(rectx,recty,rectw,recth);
 
@@ -218,7 +219,6 @@ var dino2 = {
                     //TEAM LOSE
                     endGame();
                     //append highscore
-
                 }
 
                 // Little performance improvement.
@@ -304,8 +304,9 @@ var dino2 = {
                 var dy = recY1 - recY2;
                 var distance = Math.sqrt(dx * dx + dy * dy);
 
-                if (distance < 50) {
+                if (distance < 55) {
                     // collision detected!
+                    hugaudio.play();
                     dino1.score++;
                     updateScores();
                     resetPos();

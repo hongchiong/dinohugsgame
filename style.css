@@ -1,14 +1,56 @@
-    body, html
-    {
-        margin:0px;
-        padding:0px;
+body, html {
+    margin:0px;
+    padding:0px;
 
-        outline:0px none;
-        border:0px none;
-        font-family: 'Gamja Flower', cursive;
+    outline:0px none;
+    border:0px none;
+    font-family: 'Gamja Flower', cursive;
 
-    }
+}
 
+form {
+    margin-top: 300px;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#input {
+  border: 2px solid #839dfc;
+  border-radius: 10px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 45px;
+  padding: 15px;
+}
+
+#submit {
+  background-color: #839dfc;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 45px;
+}
+
+#submit:hover {
+    background-color: #2e4391;
+}
 
 .container {
     margin-top: 30px;
@@ -19,64 +61,68 @@
 
 .header1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
 }
 
 .header2 {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 .gamePage {
     height: 800px;
     width: 800px;
-    background: linear-gradient(61deg, #65a393, #574aa3);
     position: absolute;
-    -webkit-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+    text-align: center;
+    line-height: 750px;
+    font-size: 88px;
+    border-radius: 20px;
+    color: white;
 
-    @-webkit-keyframes AnimationName {
-        0%{background-position:62% 0%}
-        50%{background-position:39% 100%}
-        100%{background-position:62% 0%}
-    }
-    @keyframes AnimationName {
-        0%{background-position:62% 0%}
-        50%{background-position:39% 100%}
-        100%{background-position:62% 0%}
-    }
+    background: linear-gradient(270deg, #087f27, #92c9e3, #bd1e1e);
+    background-size: 300% 300%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 }
 
 .endGamePage {
     display: none;
     height: 800px;
     width: 800px;
-    background: linear-gradient(61deg, #65a393, #574aa3);
     position: absolute;
-    -webkit-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+    text-align: center;
+    font-size: 75px;
+    border-radius: 20px;
+    color: white;
 
-    @-webkit-keyframes AnimationName {
-        0%{background-position:62% 0%}
-        50%{background-position:39% 100%}
-        100%{background-position:62% 0%}
-    }
-    @keyframes AnimationName {
-        0%{background-position:62% 0%}
-        50%{background-position:39% 100%}
-        100%{background-position:62% 0%}
-    }
+    background: linear-gradient(270deg, #087f27, #92c9e3, #bd1e1e);
+    background-size: 300% 300%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 }
 
 .title {
     font-size: 88px;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .score {
-    font-size: 88px;
+    font-size: 100px;
+    text-decoration: bold;
+    text-align: center;
+    flex-grow: 2;
 }
 
 .highScore {
     font-size: 88px;
+    text-align: center;
+    flex-grow: 1;
 }
 
