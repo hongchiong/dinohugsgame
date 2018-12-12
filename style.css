@@ -1,0 +1,82 @@
+    body, html
+    {
+        margin:0px;
+        padding:0px;
+
+        outline:0px none;
+        border:0px none;
+        font-family: 'Gamja Flower', cursive;
+
+    }
+
+
+.container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gamePage {
+    height: 800px;
+    width: 800px;
+    background: linear-gradient(61deg, #65a393, #574aa3);
+    position: absolute;
+    -webkit-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:62% 0%}
+        50%{background-position:39% 100%}
+        100%{background-position:62% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:62% 0%}
+        50%{background-position:39% 100%}
+        100%{background-position:62% 0%}
+    }
+}
+
+.endGamePage {
+    display: none;
+    height: 800px;
+    width: 800px;
+    background: linear-gradient(61deg, #65a393, #574aa3);
+    position: absolute;
+    -webkit-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:62% 0%}
+        50%{background-position:39% 100%}
+        100%{background-position:62% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:62% 0%}
+        50%{background-position:39% 100%}
+        100%{background-position:62% 0%}
+    }
+}
+
+.title {
+    font-size: 88px;
+}
+
+.score {
+    font-size: 88px;
+}
+
+.highScore {
+    font-size: 88px;
+}
+

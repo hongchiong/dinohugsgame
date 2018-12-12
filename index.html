@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dino Hugs</title>
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <audio controls autoplay style="display: none;">
+        <source src="dinos/happy.mp3" type="audio/mpeg">
+    </audio>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="header1">
+            <div class="title">Dino Hugs</div>
+            <div class="score"></div>
+            <div class="highScore"></div>
+        </div>
+        <div class="header2">
+            <div class="gamePage">Click to start game.</div>
+            <canvas id="theCanvas" width= 800 height= 800 style=" background-color: white;"></canvas>
+            <div class="endGamePage">
+                <form>
+                    Team Name:<br>
+                    <input id="input" type="text" name="teamname">
+                    <input id="submit" type="submit" value="Submit">
+               </form>
+         </div>
+        </div>
+
+    </div>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
