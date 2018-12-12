@@ -41,7 +41,6 @@ var dino2 = {
         return Math.round(toDegrees(Math.asin(toRadians(num))));
     }
 
-
     window.onload = function(){
         var theCanvas = document.getElementById("theCanvas");
         var ctx = theCanvas.getContext("2d");
