@@ -15,10 +15,10 @@ var dino2 = {
     score: 0
 };
 
-// localStorage.setItem("name", "Dino Buddies");
-// localStorage.setItem("highscore", 0);
-
-// document.querySelector(".highScore").textContent = `${localStorage.getItem("name")} Scored: ${localStorage.getItem("highscore")}`;
+if (localStorage.getItem("highscore") == null || localStorage.getItem("name") == null) {
+        localStorage.setItem("highscore", 0);
+        localStorage.setItem("name", "First Team");
+    };
 
 //map1
     var friction = 0.4;
