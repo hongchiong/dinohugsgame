@@ -1,4 +1,5 @@
-# Dino Hugs
+# [Dino Hugs](https://i.imgur.com/3M9P4pL.png)
+![alt text](https://i.imgur.com/3M9P4pL.png)
 A game of hugging Dinos.
 This is a two-player cooperative game, each player controls a Dino.
 The objective of the game is to help the Dinos hug as many times as possible before any of them dies.
