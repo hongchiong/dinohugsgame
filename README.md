@@ -1,4 +1,4 @@
-# [Dino Hugs](https://i.imgur.com/3M9P4pL.png)
+# [Dino Hugs](https://hongchiong.github.io/dinohugsgame/)
 ![alt text](https://i.imgur.com/3M9P4pL.png)
 A game of hugging Dinos.
 This is a two-player cooperative game, each player controls a Dino.
